@@ -75,7 +75,7 @@ body{
     z-index: 1;
 }
 
-.member-wrapper{
+.button-wrapper{
     display: flex;
     margin-top: 10px;
     justify-content: space-between;
@@ -91,14 +91,19 @@ body{
     color: #181918;
     text-decoration: none;
 }
-.member-info{
+.member-info {
     display: block;
     text-align: center;
 }
+
 .member-info a{
     display: block;
     color: #181918;
     text-decoration: none;
+}
+
+.member-info-button {
+    border: none;
 }
 
 .menu-wrapper{
@@ -110,6 +115,7 @@ body{
     padding-bottom: 30px;
     color: #fff;
     list-style: none;
+    font-size: 1.2rem;
 }
 
 .social-wrapper{
@@ -148,7 +154,7 @@ body{
     transform: translateY(10px);
     }
     100% {
-   transform: translateY(-10px);
+    transform: translateY(-10px);
     }
 }
 
