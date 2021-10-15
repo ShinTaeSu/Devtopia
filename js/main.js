@@ -5,7 +5,7 @@ AOS.init();
 
 // 주소 입력 pop-up //
 function fn_openAddressPopup() {
-    var url = "addersspopup.html";
+    var url = "adderss-popup.html";
     var name = "AddressPopup";
     var option = "width=650, height=500, top=100, left=200, location=no"
     window.open(url, name, option);
@@ -95,7 +95,7 @@ function chooseAddress(roadAddr, jibunAddr, zipNo) {
 
 /// 로그인 팝업 ///
 function fn_openLoginPopup() {
-    var url = "loginpopup.html";
+    var url = "login-popup.html";
     var name = "loginPopup";
     var option = "width=650, height=500, top=100, left=200, location=no"
     window.open(url, name, option);
@@ -104,7 +104,7 @@ function fn_openLoginPopup() {
 
 /// 회원정보 팝업 ///
 function fn_openuserinfoPopup() {
-    var url = "userinfopopup.html";
+    var url = "user-info-popup.html";
     var name = "userinfoPopup";
     var option = "width=795, height=1000 top=100 left=200 location=no"
     window.open(url, name, option);

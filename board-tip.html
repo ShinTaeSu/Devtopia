@@ -18,71 +18,80 @@
 
 
     <!-- Devtopia css -->
-    <link rel="stylesheet" href="css/board-job.css">
+    <link rel="stylesheet" href="css/board-tip.css">
 
-    <title>Devtopiaㅣ구인&구직</title>
+    <title>Devtopiaㅣ팁과 노하우</title>
 </head>
 
 <body>
+    <!-- nav start -->
     <nav class="sidebar-wrapper">
         <div class="sidebar">
+
             <div class="logo-wrapper">
                 <div class="logo">
                     <a href="">
-                        <img src="img/logo2.png" alt="logo" class="img-fluid">
+                        <img src="/img/logo2.png" alt="logo" class="img-fluid">
                     </a>
                 </div>
             </div>
 
-            <div class="welcome-text">
-                <p>뉴비 개발자들의 유토피아
-                    <br>함께 성장 성장해봐요!
-                </p>
-            </div>
-
-            <div class="login-wrapper">
-                <div class="login">
-                    <a href="" onclick="openLoginForm()">로그인</a>
+            <div class="control-box">
+                <div class="welcome-text">
+                    <p>뉴비 개발자들의 유토피아
+                        <br>함께 성장 성장해봐요!
+                    </p>
                 </div>
-            </div>
-
-            <div class="member-wrapper">
-                <div class="signin">
-                    <a href="signin.html"><span><i class="bi bi-box-arrow-right"></i></span> 회원가입</a>
+                <!-- <div class="user-status">
+                    <div class="profile-photo-wrapper">
+                    </div>
+                    <h5>${userId}님 반가워요! </h5>
+                </div> -->
+                <div class="login-wrapper">
+                    <div class="login">
+                        <a href=""><button class="login-button" onclick="fn_openLoginPopup()">로그인</button> </a>
+                    </div>
                 </div>
-                <div class="member-info">
-                    <a href=""><span><i class="bi bi-person-fill"></i></span> 회원정보</a>
+
+                <div class="button-wrapper">
+                    <div class="signup">
+                        <a href="signup.html" "><span ><i class=" bi bi-box-arrow-right"></i></span> 회원가입</a>
+                    </div>
+                    <div class="member-info">
+                        <a href=""></a><button class="member-info-button" onclick="fn_openuserinfoPopup()"><i class="bi bi-person-fill"></i>회원정보</button></a>
+                    </div>
                 </div>
             </div>
 
             <div class="menu-wrapper">
                 <div class="menu">
                     <ul>
-                        <li><i class="bi bi-globe2"></i> 개발자 뉴스</li>
-                        <li><i class="bi bi-share"></i> 자유게시판</li>
-                        <li><i class="bi bi-info-circle"></i> 팁과 노하우</li>
-                        <li><i class="bi bi-briefcase"></i> 구인 & 구직</li>
-                        <li><i class="bi bi-question-circle"></i> Q & A</li>
+                        <li><a href="board-news.html"><i class="bi bi-globe2"></i> 개발자 뉴스</a></li>
+                        <li><a href="board-free.html"><i class="bi bi-share"></i> 자유게시판</a></li>
+                        <li><a href="board-tip.html"><i class="bi bi-info-circle"></i> 팁과 노하우</a></li>
+                        <li><a href="board-job.html"><i class="bi bi-briefcase"></i> 구인 & 구직</a></li>
+                        <li><a href="board-qna.html"><i class="bi bi-question-circle"></i> Q & A</a></li>
                     </ul>
                 </div>
             </div>
             <div class="social-wrapper">
                 <div class="social-github">
-                    <h1><a href=""><i class="bi bi-github"></i></span></a></h1>
+                    <h1><a href=""><i class="bi bi-github"></i></a></h1>
                 </div>
             </div>
         </div>
         </div>
     </nav>
+    <!-- nav end -->
 
     <!-- board-job start-->
 
-    <div class="board-job-wrapper">
-        <div class="board-job-contents">
+    <div class="board-tip-wrapper">
+        <div class="board-tip-contents">
 
             <div class="board-title-wrapper">
-                <div class="board-job-title">
-                    <h1><i class="bi bi-briefcase"></i> 구인 & 구직 게시판</h1>
+                <div class="board-tip-title">
+                    <h1><i class="bi bi-info-circle"></i>팁과 노하우</h1>
                 </div>
             </div>
 
@@ -108,7 +117,7 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col" id="postno">글번호</th>
+                                <th scope="col">글번호</th>
                                 <th scope="col">제목</th>
                                 <th scope="col">작성자</th>
                                 <th scope="col">등록일</th>
@@ -117,29 +126,28 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row" id="postno">10</th> <!--$[postNo]-->
-                                <td>연봉 3,000 시작 프론트 엔드 및 퍼블리셔 모십니다.</td>       <!--$[title]-->
-                                <td>한국소프트웨어 인재개발원</td>       <!--$[writer]-->
-                                <td>2021.10.13</td>       <!--$[writeDate]-->
+                                <th scope="row">1</th> <!--$[postNo]-->
+                                <td>Mark</td>       <!--$[title]-->
+                                <td>Otto</td>       <!--$[writer]-->
+                                <td>@mdo</td>       <!--$[writeDate]-->
                                 <td>@mdo</td>       <!--$[viewCount]-->
-
                             </tr>
                             <tr>
-                                <th scope="row" id="postno">2</th>
+                                <th scope="row">2</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
                                 <td>@fat</td>
                                 <td>@fat</td>
                             </tr>
                             <tr>
-                                <th scope="row" id="postno">3</th>
+                                <th scope="row">3</th>
                                 <td>Larry the Bird</td>
                                 <td>@twitter</td>
                                 <td>@twitter</td>
                                 <td>@mdo</td>
                             </tr>
                             <tr>
-                                <th scope="row" id="postno">4</th>
+                                <th scope="row">4</th>
                                 <td>Mark</td>
                                 <td>Otto</td>
                                 <td>@mdo</td>
@@ -147,42 +155,42 @@
 
                             </tr>
                             <tr>
-                                <th scope="row" id="postno">5</th>
+                                <th scope="row">5</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
                                 <td>@fat</td>
                                 <td>@fat</td>
                             </tr>
                             <tr>
-                                <th scope="row" id="postno">6</th>
+                                <th scope="row">6</th>
                                 <td>Larry the Bird</td>
                                 <td>@twitter</td>
                                 <td>@twitter</td>
                                 <td>@mdo</td>
                             </tr>
                             <tr>
-                                <th scope="row" id="postno">7</th>
+                                <th scope="row">7</th>
                                 <td>Larry the Bird</td>
                                 <td>@twitter</td>
                                 <td>@twitter</td>
                                 <td>@mdo</td>
                             </tr>
                             <tr>
-                                <th scope="row" id="postno">8</th>
+                                <th scope="row">8</th>
                                 <td>Larry the Bird</td>
                                 <td>@twitter</td>
                                 <td>@twitter</td>
                                 <td>@mdo</td>
                             </tr>
                             <tr>
-                                <th scope="row" id="postno">9</th>
+                                <th scope="row">9</th>
                                 <td>Larry the Bird</td>
                                 <td>@twitter</td>
                                 <td>@twitter</td>
                                 <td>@mdo</td>
                             </tr>
                             <tr>
-                                <th scope="row" id="postno">10</th>
+                                <th scope="row">10</th>
                                 <td>Larry the Bird</td>
                                 <td>@twitter</td>
                                 <td>@twitter</td>
@@ -193,7 +201,7 @@
                 </div>
             </div>
 
-            <div class="cols">
+            <div class="col">
                 <ul class="pagination">
                     <li class="page-item"><a class="page-link" href="#">이전</a></li>
                     <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -205,7 +213,7 @@
                 </ul>
             </div>
             <div class="button">
-                <button type="button" class="btn">글쓰기</button>
+                <button type="button" class="btn"><a href="">글쓰기</a></button>
             </div>
         </div>
     </div>
