@@ -23,6 +23,11 @@ body{
     background-color: #e5e8ec;
 }
 
+.user-status{
+    text-align: center;
+}
+
+
 .welcome-text{
     display: block;
     text-align: center;
@@ -105,7 +110,6 @@ body{
     padding-bottom: 30px;
     color: #fff;
     list-style: none;
-    font-size: 1.5rem;
 }
 
 .social-wrapper{
