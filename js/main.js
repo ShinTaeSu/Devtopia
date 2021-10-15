@@ -102,3 +102,11 @@ function fn_openLoginPopup() {
 }
 /// 로그인 팝업 ///
 
+/// 회원정보 팝업 ///
+function fn_openuserinfoPopup() {
+    var url = "userinfopopup.html";
+    var name = "userinfoPopup";
+    var option = "width=795, height=1000 top=100 left=200 location=no"
+    window.open(url, name, option);
+}
+/// 회원정보 팝업 ///
