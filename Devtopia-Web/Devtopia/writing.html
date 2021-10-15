@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+     <!-- Vendor JS Files -->
+     <script src="vendor/aos/aos.js"></script>
+     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+     <script src="vendor/isotope-layout/isotope.pkgd.js"></script>
+     <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="vendor/summernote-js/summernote-ko-KR.js"></script>
+    <script src="vendor/summernote-js/summernote-lite.js"></script>
+    <script src="vendor/summernote-js/summer.js"></script>
+    <!-- vendor css -->
+    <link rel="stylesheet" href="vendor/aos/aos.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-icon/bootstrap-icons.css">
+    <link rel="stylesheet" href="vendor/isotope-layout/">
+    <link rel="stylesheet" href="css/summernote-lite.css">
+    <!-- Devtopia css -->
+    <link rel="stylesheet" href="css/writing.css">
+    <title>글작성</title>
+</head>
+<body>
+  <nav class="sidebar-wrapper">
+    <div class="sidebar">
+
+        <div class="logo-wrapper">
+            <div class="logo">
+                <a href="">
+                    <img src="img/logo2.png" alt="logo" class="img-fluid">
+                </a>
+            </div>
+        </div>
+
+        <div class="welcome-text">
+            <p>뉴비 개발자들의 유토피아
+                <br>함께 성장 성장해봐요!
+            </p>
+        </div>
+
+        <div class="login-wrapper">
+            <div class="login">
+                <a href="" onclick="openLoginForm()">로그인</a>
+            </div>
+        </div>
+
+        <div class="member-wrapper">
+            <div class="signin">
+                <a href="signin.html"><span><i class="bi bi-box-arrow-right"></i></span> 회원가입</a>
+            </div>
+            <div class="member-info">
+                <a href=""><span><i class="bi bi-person-fill"></i></span> 회원정보</a>
+            </div>
+        </div>
+
+        <div class="menu-wrapper">
+            <div class="menu">
+                <ul>
+                    <li><i class="bi bi-globe2"></i> 개발자 뉴스</li>
+                    <li><i class="bi bi-share"></i> 자유게시판</li>
+                    <li><i class="bi bi-info-circle"></i> 팁과 노하우</li>
+                    <li><i class="bi bi-briefcase"></i> 구인 & 구직</li>
+                    <li><i class="bi bi-question-circle"></i> Q & A</li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-wrapper">
+            <div class="social-github">
+                <h1><a href=""><i class="bi bi-github"></i></span></a></h1>
+            </div>
+        </div>
+    </div>
+    </div>
+</nav>
+<div class="contentwrap">
+  <div class="container mt-3">
+    <div class="board-title-wrap">
+        <div class="board-title">
+            <h1>글작성</h1>
+        </div>
+    </div>
+    <div class="banner">
+      <img id="banner" src="img/banner.png" alt="배너이미지" srcset="">
+    </div>
+    <form class="form-horizontal">
+        <div class="form-group">
+          <label for="inputtitle" class="control-label">제목</label>
+          <div class="form-control">
+            <input type="text" class="form-control" id="inputtitle" placeholder="Enter Title">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputwirter" class="control-label">작성자</label>
+          <div class="form-control">
+            <input type="text" class="form-control" id="inputwriter" placeholder="Enter Writer">
+          </div>
+        </div>
+    </form>
+    <div class="note-wrap">
+         <div
+             id="summernote">Please write it down.
+        </div>
+    </div> 
+    <div class="crudbutton"> 
+        <button type="button" class="btn">목록</button>
+        <button type="button" class="btn">수정</button>
+        <button type="button" class="btn">삭제</button>
+        <button type="button" class="btn">게시글 등록</button> 
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+</html>
