@@ -82,15 +82,26 @@ body{
     font-size: 1rem;
 }
 
-.signup{
+.sign-up{
     display: block;
     text-align: center;
 }
-.signup a{
+.sign-up a{
     display: block;
     color: #181918;
     text-decoration: none;
 }
+
+.sign-up-button:hover{
+    font-weight: 700;
+}
+
+.sign-up-button {
+    border: none;
+    background: #e5e8ec;
+}
+
+
 .member-info {
     display: block;
     text-align: center;
