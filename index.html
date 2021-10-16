@@ -19,6 +19,7 @@
 
     <!-- Devtopia css -->
     <link rel="stylesheet" href="/css/index.css">
+
     <title>Devtopiaㅣ개발자들의 소소한 유토피아</title>
 </head>
 
@@ -26,41 +27,33 @@
     <!-- nav start -->
     <nav class="sidebar-wrapper">
         <div class="sidebar">
-
             <div class="logo-wrapper">
                 <div class="logo">
-                    <a href="">
-                        <img src="/img/logo2.png" alt="logo" class="img-fluid">
-                    </a>
+                    <img src="/img/logo2.png" alt="logo" class="img-fluid" onclick="location.href='index.html'">
                 </div>
             </div>
-
-            <div class="control-box">
-                <div class="welcome-text">
-                    <p>뉴비 개발자들의 유토피아
-                        <br>함께 성장 성장해봐요!
-                    </p>
+            <div class="member-box">
+                <p>뉴비 개발자들의 유토피아
+                    <br>함께 성장 성장해봐요!
+                </p>
+                <br>
+                <div class="user-status">
+                    <p>${userId}님 반가워요! </p>
                 </div>
-                <!-- <div class="user-status">
-                    <h5>${userId}님 반가워요! </h5>
-                </div> -->
-                <div class="login-wrapper">
-                    <div class="login">
-                        <button class="login-button" onclick="fn_openLoginPopup()">로그인</button>
-                    </div>
+                <div class="login">
+                    <button id="open">로그인</button>
                 </div>
-
                 <div class="button-wrapper">
                     <div class="sign-up">
-                    <button class="sign-up-button" onclick="location.href='sign-up.html'"><i class=" bi bi-box-arrow-right"></i> 회원가입</button>
+                        <button onclick="location.href='sign-up.html'"><i class=" bi bi-box-arrow-right"></i>
+                            회원가입</button>
                     </div>
                     <div class="member-info">
-                        <a href=""></a><button class="member-info-button" onclick="fn_openuserinfoPopup()"><i
+                        <button class="member-info-button" onclick="fn_openuserinfoPopup()"><i
                                 class="bi bi-person-fill"></i>회원정보</button></a>
                     </div>
                 </div>
             </div>
-
             <div class="menu-wrapper">
                 <div class="menu">
                     <ul>
@@ -78,69 +71,26 @@
                 </div>
             </div>
         </div>
-        </div>
     </nav>
     <!-- nav end -->
 
     <!-- main contents start -->
-    <div class="main-contents-wrapper">
+    <div class="main-contents-wrapper" data-aos="fade-up">
         <div class="main-contents">
-            <div class="main-them-wrapper">
-                <h1><img src="/img/main-them.png" alt="" class="img-fluid animated" data-aos="fade-left"></h1>
-            </div>
-            <div class="module-wrapper">
-                hello
+            <div class="main-them-img-wrapper">
+                <div class="main-them-img">
+                    <img src="/img/main-them.png" alt="main-img" class="img-fluid animated">
+                </div>
             </div>
             <div class="table-wrapper">
-                <table class="table" data-aos="fade-up">
+                <table class="table">
                     <thead>
                         <div class="table-head">
                             <div class="board-title">
-                                <H1 data-aos="fade-up"><a href="board-news.html"><i class="bi bi-globe2"></i> 개발자 뉴스</a>
+                                <H1><a href="board-news.html"><i class="bi bi-globe2"></i> 개발자 뉴스</a>
                                 </H1>
                             </div>
-                            <div class="board-list"><a href="board-news.html" data-aos="fade-up"><span><i
-                                            class="bi bi-plus-lg"></i></span></a></div>
-                        </div>
-                        <tr>
-                            <th scope="col"> </th>
-                            <th scope="col"> </th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>AI가 나 대신 코딩을 ? 깃헙 'Copilot'을 사용 해 봤다!</td>
-                            <td id="writer">servelt1004</td>
-
-                        </tr>
-                        <tr>
-                            <td>인터넷 익스프롤러! 처참한 몰락의 이유는</td>
-                            <td id="writer">servelt1004</td>
-                        </tr>
-                        <tr>
-                            <td>머신러닝 vs 딥러닝 vs 인공지능? </td>
-                            <td id="writer">servelt1004</td>
-                        </tr>
-                        <tr>
-                            <td>지금 당장 알아둬야 하는 JS 신박한 기능 10가지 !</td>
-                            <td id="writer">servelt1004</td>
-                        </tr>
-                        <tr>
-                            <td>SonarQube와 Github Action으로 수행하는 정적 분석</td>
-                            <td id="writer">servelt1004</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <br>
-                <table class="table" data-aos="fade-up">
-                    <thead>
-                        <div class="table-head">
-                            <div class="board-title">
-                                <H1 data-aos="fade-up"><a href="board-free.html"><i class="bi bi-share"></i> 자유게시판</a>
-                                </H1>
-                            </div>
-                            <div class="board-list"><a href="board-free.html" data-aos="fade-up"><span><i
+                            <div class="board-list"><a href="board-news.html"><span><i
                                             class="bi bi-plus-lg"></i></span></a></div>
                         </div>
                         <tr>
@@ -173,14 +123,53 @@
                     </tbody>
                 </table>
                 <br>
-                <table class="table" data-aos="fade-up">
+                <table class="table">
                     <thead>
                         <div class="table-head">
                             <div class="board-title">
-                                <H1 data-aos="fade-up"><a href="board-tip.html"><i class="bi bi-info-circle"></i> 팁과
+                                <H1><a href="board-free.html"><i class="bi bi-share"></i> 자유게시판</a>
+                                </H1>
+                            </div>
+                            <div class="board-list"><a href="board-free.html"><span><i
+                                            class="bi bi-plus-lg"></i></span></a></div>
+                        </div>
+                        <tr>
+                            <th scope="col"> </th>
+                            <th scope="col"> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AI가 나 대신 코딩을 ? 깃헙 'Copilot'을 사용 해 봤다!</td>
+                            <td id="writer">servelt1004</td>
+                        </tr>
+                        <tr>
+                            <td>인터넷 익스프롤러! 처참한 몰락의 이유는</td>
+                            <td id="writer">servelt1004</td>
+                        </tr>
+                        <tr>
+                            <td>머신러닝 vs 딥러닝 vs 인공지능? </td>
+                            <td id="writer">servelt1004</td>
+                        </tr>
+                        <tr>
+                            <td>지금 당장 알아둬야 하는 JS 신박한 기능 10가지 !</td>
+                            <td id="writer">servelt1004</td>
+                        </tr>
+                        <tr>
+                            <td>SonarQube와 Github Action으로 수행하는 정적 분석</td>
+                            <td id="writer">servelt1004</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table class="table">
+                    <thead>
+                        <div class="table-head">
+                            <div class="board-title">
+                                <H1><a href="board-tip.html"><i class="bi bi-info-circle"></i> 팁과
                                         노하우</a></H1>
                             </div>
-                            <div class="board-list"><a href="board-tip.html" data-aos="fade-up"><span><i
+                            <div class="board-list"><a href="board-tip.html"><span><i
                                             class="bi bi-plus-lg"></i></span></a></div>
                         </div>
                         <tr>
@@ -192,7 +181,6 @@
                         <tr>
                             <td>AI가 나 대신 코딩을 ? 깃헙 'Copilot'을 사용 해 봤다!</td>
                             <td id="writer">servelt1004</td>
-
                         </tr>
                         <tr>
                             <td>인터넷 익스프롤러! 처참한 몰락의 이유는</td>
@@ -223,13 +211,47 @@
         </div>
     </div>
 
+    <!-- modal start -->
+    <div class="login-modal hidden ">
+        <div class="login-modal-wrapper">
+            <div class="login-modal-contens">
+
+
+                <div class="login-modal-head">
+                    <h3>로그인</h3>
+                    <img src="/img/logo-dk-2.png" alt="modal-img" class="img-fluid">
+                </div>
+                <form action="" class="login-modal-form">
+                    <div class="login-modal-input">
+                        <label for="userId">아이디</label>
+                        <br>
+                        <input type="text">
+                    </div>
+                    <div class="login-modal-input">
+                        <label for="userPw">비밀번호</label>
+                        <br>
+                        <input type="password">
+                    </div>
+                    <div class="login-modal-button-wrapper">
+                        <div class="login-signup">
+                            <button type="submit">로그인</button>
+                            <button onclick="window.open('sign-up.html')">회원가입</button>
+                        </div>
+                        <div class="login-modal-close">
+                            <button>닫기</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- modal end -->
 
     <!-- Vendor JS Files -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/vendor/isotope-layout/isotope.pkgd.js"></script>
-
-
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
     <!-- main JS Files -->
     <script src="/js/main.js"></script>
 

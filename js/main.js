@@ -110,3 +110,17 @@ function fn_openuserinfoPopup() {
     window.open(url, name, option);
 }
 /// 회원정보 팝업 ///
+
+
+/// 로그인 모달 /// 
+    const openButton = document.getElementById("open");
+    const modal = document.querySelector(".login-modal");
+    const clsoeButton = modal.querySelector("button");
+    const openModal = () => {
+        modal.classList.remove("hidden"); 
+    }
+    const closeModal = () => {
+        modal.classList.add("hidden");
+    }
+    clsoeButton.addEventListener("click", closeModal);
+    openButton.addEventListener("click", openModal);

@@ -1,4 +1,4 @@
-body{
+html{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 18px;
 }
@@ -16,41 +16,33 @@ body{
     padding-right: 30px;
 }
 
-.control-box{
+.member-box{
     margin-top: 30px;
     display: block;
     padding: 20px;
     background-color: #e5e8ec;
 }
 
-.user-status{
-    text-align: center;
-}
-
-
-.welcome-text{
-    display: block;
-    text-align: center;
-}
-
-.welcome-text p{
+.member-box > p{
+    margin: 0; 
     color: #181918;
     font-size: 1rem;
     font-weight: 700;
+    text-align: center;
 }
 
-.login-wrapper{
-    margin-top: 30px;
+.user-status{
     display: block;
+    text-align: center;
 }
 
 .login{
+    display: block;
     text-align: center;
     border-radius: 5px;
-
 }
 
-.login-button{
+.login button{
     border: none;
     width: 150px;
     height: 60px;
@@ -60,20 +52,70 @@ body{
     background-color: #3dc7dc;
 }
 
-
-.login-button:hover{
+.login button:hover{
     transform: translateY(-1px);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-.login-popup-wrapper{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
+.hidden{
+    display: none;
 }
+
+.login-modal{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1050;
+}
+
+.login-modal-wrapper{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+
+.login-modal-contens{ 
+    width: 25%;
+    padding:30px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.login-modal-head{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.login-modal-input input{
+    all: unset;
+    border-bottom: 3px solid #172b4d ;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.login-modal-button-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-modal-form button {
+    all: unset;
+    background-color: #172b4d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 .button-wrapper{
     display: flex;
@@ -84,38 +126,36 @@ body{
 
 .sign-up{
     display: block;
-    text-align: center;
-}
-.sign-up a{
-    display: block;
     color: #181918;
+    text-align: center;
     text-decoration: none;
 }
 
-.sign-up-button:hover{
+.sign-up button {
+    border: none;
+    background: #e5e8ec;
+}
+
+.sign-up button:hover{
+    color: #0060f0;
     font-weight: 700;
 }
 
-.sign-up-button {
-    border: none;
-    background: #e5e8ec;
-}
-
-
 .member-info {
     display: block;
-    text-align: center;
-}
-
-.member-info a{
-    display: block;
     color: #181918;
+    text-align: center;
     text-decoration: none;
 }
 
-.member-info-button {
+.member-info button {
     border: none;
     background: #e5e8ec;
+}
+
+.member-info button:hover{
+    color: #0060f0;
+    font-weight: 700;
 }
 
 .menu-wrapper{
@@ -130,19 +170,14 @@ body{
     font-size: 1.2rem;
 }
 
-
 .menu a{
-    display: block;
+    color: #fff;
     width: fit-content;
     text-decoration: none;
-    color: #fff;
-    
 }
 
 .menu a:hover{
     font-weight: 700;
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
     color: #3dc7dc;
 }
 
@@ -156,7 +191,6 @@ body{
     text-decoration: none;
 }
 
-
 .main-contents-wrapper{
     display: block;
     margin-left: 300px;
@@ -167,7 +201,11 @@ body{
     padding: 0 70px;
 }
 
-.main-them-wrapper{
+.main-them-img-wrapper {
+    padding-top: 30px;
+}
+
+.main-them-img{
     display: flex;
     justify-content: center;
     align-items: center;
