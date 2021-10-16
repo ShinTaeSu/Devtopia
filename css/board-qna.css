@@ -1,9 +1,9 @@
-body{
+/* nav */
+
+html{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 18px;
 }
-
-/* .sidebar-wrapper start */
 
 .sidebar-wrapper{
     display: block;
@@ -18,75 +18,146 @@ body{
     padding-right: 30px;
 }
 
-.welcome-text{
-    display: block;
+.member-box{
     margin-top: 30px;
+    display: block;
+    padding: 20px;
+    background-color: #e5e8ec;
+}
+
+.member-box > p{
+    margin: 0; 
+    color: #181918;
+    font-size: 1rem;
+    font-weight: 700;
     text-align: center;
 }
 
-.welcome-text p{
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-}
-
-.login-wrapper{
-    margin-top: 30px;
+.user-status{
     display: block;
+    text-align: center;
 }
 
 .login{
-    padding: 10px;
+    display: block;
     text-align: center;
     border-radius: 5px;
+}
+
+.login button{
+    border: none;
+    width: 150px;
+    height: 60px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 12px;
     background-color: #3dc7dc;
 }
 
-.login-popup-wrapper{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
-}
-
-.login a{
-    align-items: center;
-    color: #fff;
-    font-weight: 400;
-    text-decoration: none;
-}
-
-.login:hover{
+.login button:hover{
     transform: translateY(-1px);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-.member-wrapper{
+.hidden{
+    display: none;
+}
+
+.login-modal{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1050;
+}
+
+.login-modal-wrapper{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+
+.login-modal-contens{ 
+    width: 25%;
+    padding:30px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.login-modal-head{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.login-modal-input input{
+    all: unset;
+    border-bottom: 3px solid #172b4d ;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.login-modal-button-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-modal-form button {
+    all: unset;
+    background-color: #172b4d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.button-wrapper{
     display: flex;
     margin-top: 10px;
     justify-content: space-between;
     font-size: 1rem;
 }
 
-.signin{
+.sign-up{
     display: block;
+    color: #181918;
     text-align: center;
-}
-.signin a{
-    display: block;
-    color: #fff;
     text-decoration: none;
 }
-.member-info{
-    display: block;
-    text-align: center;
+
+.sign-up button {
+    border: none;
+    background: #e5e8ec;
 }
-.member-info a{
+
+.sign-up button:hover{
+    color: #0060f0;
+    font-weight: 700;
+}
+
+.member-info {
     display: block;
-    color: #fff;
+    color: #181918;
+    text-align: center;
     text-decoration: none;
+}
+
+.member-info button {
+    border: none;
+    background: #e5e8ec;
+}
+
+.member-info button:hover{
+    color: #0060f0;
+    font-weight: 700;
 }
 
 .menu-wrapper{
@@ -98,7 +169,18 @@ body{
     padding-bottom: 30px;
     color: #fff;
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.menu a{
+    color: #fff;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    font-weight: 700;
+    color: #3dc7dc;
 }
 
 .social-wrapper{
@@ -110,7 +192,8 @@ body{
     color: #fff;
     text-decoration: none;
 }
-/* .sidebar-wrapper end */
+
+/* nav */
 
 /* board job start */
 

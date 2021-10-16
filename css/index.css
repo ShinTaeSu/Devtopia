@@ -1,3 +1,5 @@
+/* nav */
+
 html{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 18px;
@@ -190,6 +192,8 @@ html{
     color: #fff;
     text-decoration: none;
 }
+
+/* nav */
 
 .main-contents-wrapper{
     display: block;
