@@ -12,10 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 
     <!-- vendor css -->
-    <link rel="stylesheet" href="vendor/aos/aos.css">
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/bootstrap-icon/bootstrap-icons.css">
-    <link rel="stylesheet" href="vendor/summernote/css/summernote-lite.css">
+    <link rel="stylesheet" href="./vendor/aos/aos.css">
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/bootstrap-icon/bootstrap-icons.css">
+    <link rel="stylesheet" href="./vendor/summernote/css/summernote-lite.css">
 
     <!-- Devtopia css -->
     <link rel="stylesheet" href="css/write-article.css">
@@ -76,7 +76,7 @@
     <section class="write-article-wrapper">
         <div class="write-article">
             <div class="board-head">
-                <h1>글작성</h1>
+                <h3>게시글 작성</h3>
             </div>
 
             <br>
@@ -86,30 +86,29 @@
                     <div class="writer">
                         <label for="title">작성자</label>
                         <br>
-                        <input type="text"></input>
+                        <input type="text" placeholder="${userID}" readonly></input>
                     </div>
                     <br>
                     <label for="title">제목</label>
                     <br>
-                    <input type="text"></input>
+                    <input type="text" class="input-title" required></input>
                 </div>
-
-
-            </form>
-            <br>
-            <form class="form-horizontal">
-                <div class="note-wrap">
-                    <div id="summernote">Please write it down.
+                <br>
+                <form class="form-horizontal">
+                    <div class="note-wrap">
+                        <div id="summernote">
+                        </div>
                     </div>
-                </div>
-                <div class="write-article-button-wrapper">
-                    <div class="article-cotroller">
-                        <button>수정</button>
-                        <button>삭제</button>
-                        <button>게시글 등록</button>
-                    </div>
-                    <button onclick="location.href='#'" id="board-list">목록</button>
-                </div>
+                    <div class="write-article-button-wrapper">
+                        <div class="article-cotroller">
+                            <button type="submit">게시글 등록</button>
+                            <!-- <button>수정</button>
+                            <button>삭제</button> -->
+                        </div>
+                </form>
+
+                <button onclick="location.href='#'" id="board-list">목록</button>
+        </div>
         </div>
     </section>
 
@@ -123,9 +122,9 @@
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="vendor/summernote//js/summer.js"></script>
-        <script src="vendor/summernote/js/summernote-lite.js"></script>
-        <script src="vendor/summernote/js/summer.js"></script>
+        <script src="./vendor/summernote/js/summernote-ko-KR.js"></script>
+        <script src="./vendor/summernote/js/summernote-lite.js"></script>
+        <script src="./vendor/summernote/js/summer.js"></script>
 
         <!-- Devtopia JS -->
         <script src="js/main.js"></script>
