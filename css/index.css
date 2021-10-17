@@ -255,6 +255,13 @@ html{
 }
 
 
+tr {
+    border-bottom:2px solid #172b4d;
+}
+tbody tr:hover{
+    background-color: #e5e8ec;
+}
+
 #writer{
     text-align: right;
 }

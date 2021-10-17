@@ -293,10 +293,11 @@ html{
 .cols{
     margin-left: 45%;
 }
-.button{
-    margin-left: 62%;
+.write-button button{
+    all: unset;
+    background-color: #172b4d;
+    border-radius: 5px;
+    padding: 5px 12px;
+    color: #fff;
 }
-.btn{
-    background-color:#505f79;
-    color: wheat;
-}
+
