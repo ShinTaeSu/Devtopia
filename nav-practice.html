@@ -93,6 +93,26 @@
         </div>
     </footer>
 
+    <script>
+        /// 동적 수직 네비///
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange();// 함수 호출
+        });
+
+        // 사이드바 변경 스크립트
+        function menuBtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closeBtn.classList.replace("bi bi-justify", "bi bi-justify-right");//아이콘 수정
+            } else {
+                closeBtn.classList.replace("bi bi-justify-right", "bi bi-justify");//아이콘 롤백
+            }
+        }
+/// 동적 수직 네비 ///
+    </script>
 
     <!-- Vendor JS Files -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

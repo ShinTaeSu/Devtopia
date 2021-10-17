@@ -3,26 +3,6 @@
 AOS.init();
 // 스크롤 애니메이션 //
 
-/// 동적 수직 네비///
-let sidebar = document.querySelector(".sidebar");
-let closeBtn = document.querySelector("#btn");
-
-closeBtn.addEventListener("click", () => {
-    sidebar.classList.toggle("open");
-    menuBtnChange();// 함수 호출
-});
-
-// 사이드바 변경 스크립트
-function menuBtnChange() {
-    if (sidebar.classList.contains("open")) {
-        closeBtn.classList.replace("bi bi-justify", "bi bi-justify-right");//아이콘 수정
-    } else {
-        closeBtn.classList.replace("bi bi-justify-right", "bi bi-justify");//아이콘 롤백
-    }
-}
-/// 동적 수직 네비 ///
-
-
 // 주소 입력 pop-up //
 function fn_openAddressPopup() {
     var url = "adderss-popup.html";
@@ -136,7 +116,7 @@ const openButton = document.getElementById("open");
 const modal = document.querySelector(".login-modal");
 const clsoeButton = modal.querySelector("button");
 const openModal = () => {
-    modal.classList.remove("hidden"); 
+    modal.classList.remove("hidden");
 }
 const closeModal = () => {
     modal.classList.add("hidden");
@@ -144,6 +124,3 @@ const closeModal = () => {
 clsoeButton.addEventListener("click", closeModal);
 openButton.addEventListener("click", openModal);
 /// 로그인 모달 ///
-
-
-
