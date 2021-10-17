@@ -214,55 +214,80 @@ html{
 }
 
 .board-job-title{
-    padding: 30px;
+    padding: 15px;
     background-color: #172b4d;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
-.board-job-title h1{
+.board-job-title h3{
     color: #fff;
-    font-weight: 700;
 }
 
 .board-best-wrap {
     display: block;
 }
 
+
+
 .board-best{
-    background-color: #e5e8ec;
-    border-radius: 10px;
-    padding: 30px;
+    border: 1px solid #172b4d;
+    padding: 20px;
 }
 
-.board-best ul li {
-    border-bottom: #172b4d;
-    list-style: none;
-    padding-bottom: 5px;
-}
 
 .board-best a{
-    font-size: 0.9rem;
-    color: #172b4d;
+    width: 100%;
+    overflow: hidden;
+    display: inline-flex;
+    color: #181918;
+    font-size: 13px;
     text-decoration: none;
 }
 
-.table {
-    text-align: left;
-    line-height: 1.5;
-    /* border-left: 1px solid #ccc; */
+
+table {
+    margin-top: 10px;
+    line-height: 2.5;
+    width: 100%;
 }
 
-.table thead th {
-    padding: 30px;
-    font-weight: bold;
-    /* border-top: 1px solid #ccc; */
-    /* border-right: 1px solid #ccc; */
-    border-bottom: 3px solid #172b4d;
+thead{
+    border-top: 2px solid #172b4d;
+    border-bottom: 1px solid #172b4d;
 }
 
-#postno {
+.table-wrapper>table tr th{
+    padding: 8px 5px;
     text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
 }
+
+.table-wrapper>table tr td{
+    padding: 8px 5px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+    border-bottom: 1px solid #e5e8ec;
+}
+
+.table-wrapper>table tr td.title>.text-wrap{
+    display: flex;
+    overflow: hidden;
+    width: 95%;
+    text-align: left;
+}
+
+.text-wrap a{
+    text-decoration: none;
+    color: #181918;;
+
+}
+
+tbody tr:hover{
+    background-color: #e5e8ec;
+}
+
 
 .write-button {
     text-align: right;
