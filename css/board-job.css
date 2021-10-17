@@ -204,9 +204,12 @@ html{
     height: 200vh;
 }
 
+.board-job-contents{
+    width: 80%;
+}
+
 .board-title-wrapper{
     display: block;
-    width: 70%;
     padding: 30px 0;
 }
 
@@ -226,7 +229,6 @@ html{
 }
 
 .board-best{
-    width: 70%;
     background-color: #e5e8ec;
     border-radius: 10px;
     padding: 30px;
@@ -243,31 +245,78 @@ html{
     color: #172b4d;
     text-decoration: none;
 }
-.table-wrapper{
-    width: 75%;
-}
+
 .table {
-    border-collapse: collapse;
     text-align: left;
     line-height: 1.5;
     /* border-left: 1px solid #ccc; */
-    margin: 20px 10px;
-  }
-  
-  .table thead th {
+}
+
+.table thead th {
     padding: 30px;
     font-weight: bold;
     /* border-top: 1px solid #ccc; */
     /* border-right: 1px solid #ccc; */
     border-bottom: 3px solid #172b4d;
-  }
+}
 
-  #postno {
-      text-align: center;
-  }
+#postno {
+    text-align: center;
+}
 
+.write-button {
+    text-align: right;
+}
 
-  /* .table tbody th {
+.write-button button{
+    all: unset;
+    background-color: #172b4d;
+    border-radius: 5px;
+    padding: 5px 12px;
+    color: #fff;
+    cursor: pointer;;
+}
+
+.paigination-wrapper{
+    margin-top: 30px;
+    align-items: center;
+}
+
+.paigination-wrapper ul{
+    justify-content: center;
+}
+
+.paigination-wrapper ul li{
+    text-align: center;
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+}
+
+.paigination-wrapper ul li:hover{
+    border: 1px solid #e5e8ec;
+}
+
+#Previous-page,
+#next-page{
+    width:80px;
+}
+#Previous-page:hover,
+#next-page:hover {
+    border: none;
+}
+
+.pagination a{
+    text-decoration: none;
+    border: none;
+    color: #181918;
+}
+
+.pagination a:hover{
+    color: #0060f0
+}
+
+/* .table tbody th {
     width: 150px;
     padding: 10px;
     font-weight: bold;
@@ -275,29 +324,20 @@ html{
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     background: #ececec;
-  }
-  .table td {
+}
+
+.table td {
     width: 350px;
     padding: 10px;
     vertical-align: top;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
   } */
+
 #banner {
     position: fixed;
     right:50%;
     margin-right:-800px; 
     top: 168px;
-}
-
-.cols{
-    margin-left: 45%;
-}
-.write-button button{
-    all: unset;
-    background-color: #172b4d;
-    border-radius: 5px;
-    padding: 5px 12px;
-    color: #fff;
 }
 

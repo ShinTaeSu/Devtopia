@@ -75,7 +75,6 @@
     <!-- nav end -->
 
     <!-- board-job start-->
-
     <div class="board-job-wrapper">
         <div class="board-job-contents">
 
@@ -101,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="main-content">
                 <div class="table-wrapper">
                     <table class="table">
@@ -116,11 +115,16 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row" id="postno">10</th> <!--$[postNo]-->
-                                <td>연봉 3,000 시작 프론트 엔드 및 퍼블리셔 모십니다.</td>       <!--$[title]-->
-                                <td>한국소프트웨어 인재개발원</td>       <!--$[writer]-->
-                                <td>2021.10.13</td>       <!--$[writeDate]-->
-                                <td>@mdo</td>       <!--$[viewCount]-->
+                                <th scope="row" id="postno">10</th>
+                                <!--$[postNo]-->
+                                <td>연봉 3,000 시작 프론트 엔드 및 퍼블리셔 모십니다.</td>
+                                <!--$[title]-->
+                                <td>한국소프트웨어 인재개발원</td>
+                                <!--$[writer]-->
+                                <td>2021.10.13</td>
+                                <!--$[writeDate]-->
+                                <td>32</td>
+                                <!--$[viewCount]-->
 
                             </tr>
                             <tr>
@@ -181,7 +185,7 @@
                                 <td>@mdo</td>
                             </tr>
                             <tr>
-                                <th scope="row" id="postno">10</th>
+                                <th scope="row" id="postno">1</th>
                                 <td>Larry the Bird</td>
                                 <td>@twitter</td>
                                 <td>@twitter</td>
@@ -191,20 +195,39 @@
                     </table>
                 </div>
             </div>
-
-            <div class="cols">
-                <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">이전</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                    <li class="page-item"><a class="page-link" href="#">다음</a></li>
-                </ul>
-            </div>
             <div class="write-button">
                 <button onclick="location.href='write-article.html'">글쓰기</button>
+            </div>
+            <div class="paigination-wrapper" >
+                <ul class="pagination">
+                    <li id="Previous-page">
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&#60;</span>
+                            <span class="sr-only">이전</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li id="next-page">
+                        <a href="#" aria-label="Next">
+                            <span class="sr-only">다음</span>
+                            <span aria-hidden="true">&#62;</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -221,11 +244,10 @@
 
 
 
-    <script src="vendor/aos/aos.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/isotope-layout/isotope.pkgd.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.js"></script>
-
+    <script src="./vendor/aos/aos.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./vendor/twbsPagination/jquery.twbsPagination.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>
