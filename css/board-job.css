@@ -295,9 +295,6 @@ ul{
 
 .board-wrapper{
     display: block;
-}
-
-.board-contents{
     width: 80%;
 }
 
@@ -322,6 +319,10 @@ ul{
     padding: 20px;
 }
 
+.board-best ul li{
+    list-style: none;
+}
+
 .board-best a{
     width: 100%;
     overflow: hidden;
@@ -331,14 +332,10 @@ ul{
     text-decoration: none;
 }
 
-.table-wrapper{
-    width: 100%;
-}
-
 table {
     margin-top: 10px;
     line-height: 2.5;
-
+    width: 100%;
 }
 
 thead{
