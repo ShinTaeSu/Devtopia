@@ -188,14 +188,6 @@ ul{
     text-align: center;
 }
 
-    /* .profile-details img{
-    height: 45px;
-    width: 45px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin-right: 10px;
-    } */
-
 .user-status{
     display: block;
     text-align: center;
@@ -274,27 +266,9 @@ ul{
     text-align: center;
 }
 
-    .sidebar li.profile .job{
+.sidebar li.profile .job{
     font-size: 12px;
 }
-
-/* .sidebar .profile #log_out{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    background: #3dc7dc;;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 0px;
-    transition: all 0.5s ease;
-}
-
-    .sidebar.open .profile #log_out{
-    width: 50px;
-    background: none;
-} */
 
 .main-contents{
     position: relative;
@@ -403,7 +377,7 @@ footer{
 
 .login-modal-input input{
     all: unset;
-    border-bottom: 3px solid #172b4d ;
+    border-bottom: 3px solid #9096a0 ;
     width: 100%;
     height: 60px;
     margin-bottom: 30px;

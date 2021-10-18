@@ -493,6 +493,15 @@ tbody tr:hover{
     align-items: center;
 }
 
+.login-modal-button-wrapper input {
+    all: unset;
+    background-color: #172b4d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .login-modal-form button {
     all: unset;
     background-color: #172b4d;
