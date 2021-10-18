@@ -269,6 +269,7 @@ ul{
 .sidebar li.profile .job{
     font-size: 12px;
 }
+/*nav end*/
 
 .main-contents{
     position: relative;
@@ -286,7 +287,7 @@ ul{
     left: 250px;
     width: calc(100% - 250px);
 }
-/*nav end*/
+
 
 .main-img-wrapper img{
     display: inline-block;
