@@ -286,6 +286,7 @@ ul{
     left: 250px;
     width: calc(100% - 250px);
 }
+/*nav end*/
 
 .main-img-wrapper img{
     display: inline-block;
@@ -320,6 +321,10 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.table-head a{
+    text-decoration: none
+    ;
 }
 
 footer{
