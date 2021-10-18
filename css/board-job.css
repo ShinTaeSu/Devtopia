@@ -277,10 +277,18 @@ tbody tr:hover{
     color: #0060f0
 }
 
-#banner {
+/* #banner {
     position: fixed;
     right:50%;
     margin-right:-800px; 
+    top: 168px;
+} */
+.sideBanner {
+    position: absolute;
+    width: 179px;
+    height: 687px;
+    right:50%;
+    margin-right:-1000px; 
     top: 168px;
 }
 
