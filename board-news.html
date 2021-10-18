@@ -25,54 +25,81 @@
 
 <body>
     <!-- nav start -->
-    <nav class="sidebar-wrapper">
-        <div class="sidebar">
-            <div class="logo-wrapper">
-                <div class="logo">
-                    <img src="/img/logo2.png" alt="logo" class="img-fluid" onclick="location.href='index.html'">
+    <nav class="sidebar">
+        <div class="details">
+            <i class="bi bi-justify" id="btn" onclick="menuBtnChange()"></i>
+        </div>
+        <div class="logo">
+            <img src="/img/logo2.png" alt="" class="img fluid" width="90%">
+        </div>
+        <br>
+
+        <div class="profile">
+            <div class="profile-details">
+                <div class="welcome-text">
+                    <p>뉴비 개발자들의 유토피아
+                        <br>함께 성장 성장해봐요!
+                    </p>
                 </div>
-            </div>
-            <div class="member-box">
-                <p>뉴비 개발자들의 유토피아
-                    <br>함께 성장 성장해봐요!
-                </p>
-                <br>
-                <!-- <div class="user-status">
-                    <p>${userId}님 반가워요! </p>
-                </div> -->
+                <div class="user-status">
+                    <p><b>김바비</b>님 반갑습니다!</p>
+                </div>
                 <div class="login">
                     <button id="open">로그인</button>
                 </div>
                 <div class="button-wrapper">
                     <div class="sign-up">
-                        <button onclick="location.href='sign-up.html'"><i class=" bi bi-box-arrow-right"></i>
+                        <button onclick="location.href='sign-up.html'"><i id="signup"
+                                class=" bi bi-box-arrow-right"></i>
                             회원가입</button>
                     </div>
                     <div class="member-info">
-                        <button class="member-info-button" onclick="fn_openuserinfoPopup()"><i
+                        <button class="member-info-button" onclick="fn_openuserinfoPopup()"><i id="memberinfo"
                                 class="bi bi-person-fill"></i>회원정보</button></a>
                     </div>
                 </div>
             </div>
-            <div class="menu-wrapper">
-                <div class="menu">
-                    <ul>
-                        <li><a href="board-news.html"><i class="bi bi-globe2"></i> 개발자 뉴스</a></li>
-                        <li><a href="board-free.html"><i class="bi bi-share"></i> 자유게시판</a></li>
-                        <li><a href="board-tip.html"><i class="bi bi-info-circle"></i> 팁과 노하우</a></li>
-                        <li><a href="board-job.html"><i class="bi bi-briefcase"></i> 구인 & 구직</a></li>
-                        <li><a href="board-qna.html"><i class="bi bi-question-circle"></i> Q & A</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="social-wrapper">
-                <div class="social-github">
-                    <h1><a href=""><i class="bi bi-github"></i></a></h1>
-                </div>
-            </div>
         </div>
+        <ul class="nav-list">
+            <li>
+                <a href="./board-news.html">
+                    <i class="bi bi-globe2"></i>
+                    <span class="links_name">개발자 뉴스</span>
+                </a>
+            </li>
+            <li>
+                <a href="./board-free.html">
+                    <i class="bi bi-share"></i>
+                    <span class="links_name">자유게시판</span>
+                </a>
+            </li>
+            <li>
+                <a href="./board-tip.html">
+                    <i class="bi bi-info-circle"></i>
+                    <span class="links_name">팁과 노하우</span>
+                </a>
+            </li>
+            <li>
+                <a href="./board-job.html">
+                    <i class="bi bi-briefcase"></i>
+                    <span class="links_name">구인 & 구직</span>
+                </a>
+            </li>
+            <li>
+                <a href="./board-qna.html">
+                    <i class="bi bi-question-circle"></i>
+                    <span class="links_name">Q & A</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/shintwelv/MINI_Project_TEAM2" target="_blank">
+                    <i class="bi bi-github"></i>
+                    <span class="links_name">Github</span>
+                </a>
+            </li>
+        </ul>
     </nav>
-    <!-- nav end -->
+    <!-- nav end-->
 
 
     <di class="board-news-wrapper">
@@ -261,13 +288,69 @@
     </div>
     <!-- banner section end-->
 
+    <!-- login modal start -->
+    <div class="login-modal hidden">
+        <div class="login-modal-wrapper">
+            <div class="login-modal-contens">
+                <div class="login-modal-head">
+                    <h3>로그인</h3>
+                    <img src="./img/logo-dk-2.png" alt="modal-img" class="img-fluid">
+                </div>
+                <form action="" class="login-modal-form">
+                    <div class="login-modal-input">
+                        <label for="userId">아이디</label>
+                        <br>
+                        <input type="text" required>
+                    </div>
+                    <div class="login-modal-input">
+                        <label for="userPw">비밀번호</label>
+                        <br>
+                        <input type="password" required>
+                    </div>
+                    <div class="login-modal-button-wrapper">
+                        <div class="login-signup">
+                            <input type="submit" value="로그인" id="loginSuccess-button"></input>
+                            <button onclick="window.open('sign-up.html')">회원가입</button>
+                        </div>
+                        <div class="login-modal-close">
+                            <button id="closeButton">닫기</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- login modal end -->
+
+    <!-- navigation -->
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange();// 함수 호출
+        });
+
+        // 사이드바 변경 스크립트
+        function menuBtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closeBtn.classList.replace("bi-justify", "bi-justify-right");//아이콘 수정
+            } else {
+                closeBtn.classList.replace("bi-justify-right", "bi-justify");//아이콘 롤백
+            }
+        }
+    </script>
+    <!-- navigation -->
+
     <!-- vendoer css-->
     <script src="./vendor/aos/aos.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Devtopia Js-->
-    <script src="js/banner.js"></script>
+    <script src="./js/banner.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
