@@ -206,16 +206,14 @@ html{
     padding: 30px 0;
 }
 
-.board-news-title{
-    padding: 30px;
-    background-color: #3dc7dc;
-    border-radius: 10px;
+.board-title{
+    padding: 15px;
+    background-color: #172b4d;
+    border-radius: 15px;
 }
 
-.board-news-title h1{
-    
-    font-weight: 700;
-    font-size: 2.5rem;
+.board-title h3{
+    color: #fff;
 }
 .news-img{
 
@@ -247,6 +245,41 @@ html{
     font-size:19;
     color: #ec6582;
 }
-.col{
-    margin-left: 45%;
+.paigination-wrapper{
+    margin-top: 30px;
+    align-items: center;
+}
+
+.paigination-wrapper ul{
+    justify-content: center;
+}
+
+.paigination-wrapper ul li{
+    text-align: center;
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+}
+
+.paigination-wrapper ul li:hover{
+    border: 1px solid #e5e8ec;
+}
+
+#Previous-page,
+#next-page{
+    width:80px;
+}
+#Previous-page:hover,
+#next-page:hover {
+    border: none;
+}
+
+.pagination a{
+    text-decoration: none;
+    border: none;
+    color: #181918;
+}
+
+.pagination a:hover{
+    color: #0060f0
 }

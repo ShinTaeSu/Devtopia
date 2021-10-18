@@ -77,8 +77,8 @@
 
 <div class="board-news-wrapper">
     <div class="board-title-wrapper">
-        <div class="board-news-title">
-            <h1><i class="bi bi-globe2"></i> 개발자 뉴스</h1>
+        <div class="board-title">
+            <h3><i class="bi bi-globe2"></i> 개발자 뉴스</h3>
         </div>
     </div>
     <div class="main-content">
@@ -175,19 +175,39 @@
         </div>
         
         
-      </div> <!-- container 끝 -->
-    </div>
-          <div class="col">
-           <ul class="pagination">
-               <li class="page-item"><a class="page-link" href="#">이전</a></li>
-               <li class="page-item"><a class="page-link" href="#">1</a></li>
-               <li class="page-item"><a class="page-link" href="#">2</a></li>
-               <li class="page-item"><a class="page-link" href="#">3</a></li>
-               <li class="page-item"><a class="page-link" href="#">4</a></li>
-               <li class="page-item"><a class="page-link" href="#">5</a></li>
-               <li class="page-item"><a class="page-link" href="#">다음</a></li>
-           </ul>
-         </div> 
+    </div> <!-- container 끝 -->
+</div>
+<div class="paigination-wrapper">
+    <ul class="pagination">
+        <li id="Previous-page">
+            <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&#60;</span>
+                <span class="sr-only">이전</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">1</a>
+        </li>
+        <li>
+            <a href="#">2</a>
+        </li>
+        <li>
+            <a href="#">3</a>
+        </li>
+        <li>
+            <a href="#">4</a>
+        </li>
+        <li>
+            <a href="#">5</a>
+        </li>
+        <li id="next-page">
+            <a href="#" aria-label="Next">
+                <span class="sr-only">다음</span>
+                <span aria-hidden="true">&#62;</span>
+            </a>
+        </li>
+    </ul>
+</div>
 <section class="banner-place-wrapper">
     <div class="banner-place">
         <img id="banner" src="img/banner.png" alt="배너이미지">
