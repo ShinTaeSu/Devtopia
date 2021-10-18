@@ -303,7 +303,7 @@ ul{
 
 .board-wrapper{
     display: block;
-    padding: 0 30px;
+    width: 80%;
 }
 
 .board-title-wrapper{
@@ -321,12 +321,17 @@ ul{
 }
 
 .board-best-wrap {
+    margin-top: 30px;
     display: block;
 }
 
 .board-best{
-    border: 1px solid #172b4d;
     padding: 20px;
+    border: 1px solid #172b4d;
+}
+
+.board-best ul li{
+    list-style: none;
 }
 
 .board-best a{
@@ -341,6 +346,7 @@ ul{
 table {
     margin-top: 10px;
     line-height: 2.5;
+    width: 100%;
 }
 
 thead{
