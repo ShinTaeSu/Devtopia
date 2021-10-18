@@ -1,43 +1,208 @@
 /* nav */
 
-html{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 18px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
-.sidebar-wrapper{
-    display: block;
-    position: fixed;
-    width: 300px;
-    height: 100vh;
-    background-color: #172b4d;
-}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    }
 
 .sidebar{
-    padding:30px;
-    padding-right: 30px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 78px;
+    background: #172b4d;
+    padding: 6px 14px;
+    z-index: 99;
+    transition: all 0.5s ease;
+}
+.sidebar.open{
+    width: 250px;
 }
 
-.member-box{
-    margin-top: 30px;
-    display: block;
-    padding: 20px;
-    background-color: #e5e8ec;
+.sidebar .details{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-.member-box > p{
-    margin: 0; 
+.logo{
+    text-align: center;
+    cursor: pointer;
+}
+
+.sidebar .details img{
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.sidebar .logo img{
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.sidebar .details .logo_name{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.sidebar.open .logo img {
+    opacity: 1;
+}
+
+.sidebar.open .details .logo_name{
+    opacity: 1;
+    }
+
+.sidebar .details #btn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: all 0.4s ease;
+    font-size: 23px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.sidebar.open .details #btn{
+    text-align: right;
+}
+
+.sidebar i{
+    color: #fff;
+    height: 60px;
+    min-width: 50px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.sidebar .nav-list{
+    margin-top: 70px;
+}
+
+.sidebar.open .nav-list{
+    margin-top:70px;
+    height: 100%;
+}
+
+ul{
+    padding-left: 0;
+}
+
+.sidebar li{
+    position: relative;
+    margin: 8px 0;
+    list-style: none;
+}
+
+.sidebar li a{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.sidebar li a .links_name{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+    }
+
+.sidebar.open li a .links_name{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sidebar li a:hover .links_name,
+.sidebar li a:hover i{
+    transition: all 0.5s ease;
     color: #181918;
-    font-size: 1rem;
+}
+
+.sidebar li i{
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    border-radius: 12px;
+}
+
+.sidebar li a:hover{
     font-weight: 700;
+    background: #3dc7dc;
+    }
+
+.sidebar.open li a .links_name{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sidebar li a:hover .links_name,
+.sidebar li a:hover i{
+    transition: all 0.5s ease;
+    color: #11101D;
+}
+
+.sidebar li i{
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    border-radius: 12px;
+}
+
+.profile {
+    opacity: 0;
+}
+
+.sidebar.open .profile{
+    opacity:1 ;
+    height: 200px;
+    padding: 15px;
+    background: #e5e8ec;
+    border-radius: 12px;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.profile-details{
+    align-items: center;
+}
+
+.welcome-text{
+    font-size: 12px;
     text-align: center;
 }
+
+    /* .profile-details img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 10px;
+    } */
 
 .user-status{
     display: block;
     text-align: center;
 }
-
+    
 .login{
     display: block;
     text-align: center;
@@ -47,13 +212,13 @@ html{
 .login button{
     border: none;
     width: 150px;
-    height: 60px;
+    height: 40px;
     color: #fff;
     font-weight: 700;
     border-radius: 12px;
     background-color: #3dc7dc;
 }
-
+    
 .login button:hover{
     transform: translateY(-1px);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
@@ -62,12 +227,12 @@ html{
 .button-wrapper{
     display: flex;
     margin-top: 10px;
-    justify-content: space-between;
-    font-size: 1rem;
+    justify-content: space-around;
+    font-size: 12px;
 }
 
 .sign-up{
-    display: block;
+    transition: all 0.5s ease;
     color: #181918;
     text-align: center;
     text-decoration: none;
@@ -77,10 +242,16 @@ html{
     border: none;
     background: #e5e8ec;
 }
-
+#signup{
+    all:unset
+}    
 .sign-up button:hover{
     color: #0060f0;
     font-weight: 700;
+}
+
+#memberinfo{
+    all:unset
 }
 
 .member-info {
@@ -93,44 +264,37 @@ html{
 .member-info button {
     border: none;
     background: #e5e8ec;
-}
+    }
 
 .member-info button:hover{
     color: #0060f0;
     font-weight: 700;
 }
 
-.menu-wrapper{
-    display: block;
-    margin-top: 70px;
-}
-
-.menu ul li{
-    padding-bottom: 30px;
-    color: #fff;
-    list-style: none;
-    font-size: 1.2rem;
-}
-
-.menu a{
-    color: #fff;
-    width: fit-content;
-    text-decoration: none;
-}
-
-.menu a:hover{
-    font-weight: 700;
-    color: #3dc7dc;
-}
-
-.social-wrapper{
-    display: block;
+.sidebar li.profile .text,
+.sidebar li.profile .job{
     text-align: center;
 }
 
-.social-github a{
-    color: #fff;
-    text-decoration: none;
+    .sidebar li.profile .job{
+    font-size: 12px;
+}
+
+.main-contents{
+    position: relative;
+    background: #fff;
+    min-height: 100vh;
+    padding: 30px;
+    top: 0;
+    left: 78px;
+    width: calc(100% - 78px);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.sidebar.open ~ .main-contents{
+    left: 250px;
+    width: calc(100% - 250px);
 }
 
 /* nav */
@@ -140,17 +304,10 @@ html{
 .board-wrapper{
     display: block;
     padding: 0 30px;
-    margin-left: 300px;
-    height: 200vh;
-}
-
-.board-contents{
-    width: 80%;
 }
 
 .board-title-wrapper{
     display: block;
-    padding: 30px 0;
 }
 
 .board-title{
@@ -184,7 +341,6 @@ html{
 table {
     margin-top: 10px;
     line-height: 2.5;
-    width: 100%;
 }
 
 thead{
@@ -281,8 +437,6 @@ tbody tr:hover{
     position: absolute;
     width: 179px;
     height: 687px;
-    right:50%;
-    margin-right:-1000px; 
     top: 168px;
 }
 

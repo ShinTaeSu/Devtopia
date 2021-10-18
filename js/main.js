@@ -114,7 +114,7 @@ function fn_openuserinfoPopup() {
 /// 로그인 모달 /// 
 const openButton = document.getElementById("open");
 const modal = document.querySelector(".login-modal");
-const clsoeButton = modal.querySelector("button");
+const clsoeButton = modal.querySelector("#closeButton");
 const openModal = () => {
     modal.classList.remove("hidden");
 }

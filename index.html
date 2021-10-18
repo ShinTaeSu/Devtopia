@@ -46,6 +46,9 @@
                 </div>
                 <div class="login">
                     <button id="open">로그인</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="loginSuccess" id="loginSuccess">
+                        모달
+                      </button>
                 </div>
                 <div class="button-wrapper">
                     <div class="sign-up">
@@ -240,7 +243,7 @@
         <h1><img src="./img/font-logo.png" alt="" class="img-fluid"><a href=""></a></h1>
     </footer>
 
-    <!-- modal start -->
+    <!-- login modal start -->
     <div class="login-modal hidden">
         <div class="login-modal-wrapper">
             <div class="login-modal-contens">
@@ -261,7 +264,7 @@
                     </div>
                     <div class="login-modal-button-wrapper">
                         <div class="login-signup">
-                            <input type="submit" value="로그인"></input>
+                            <input type="submit" value="로그인" id="loginSuccess-button"></input>
                             <button onclick="window.open('sign-up.html')">회원가입</button>
                         </div>
                         <div class="login-modal-close">
@@ -272,7 +275,7 @@
             </div>
         </div>
     </div>
-    <!-- modal end -->
+    <!-- login modal end -->
 
     <!-- navigation -->
     <script>
@@ -301,6 +304,7 @@
 
     <!-- main JS Files -->
     <script src="./js/main.js"></script>
+    <script src="./js/login-success.js"></script>
 
 </body>
 
