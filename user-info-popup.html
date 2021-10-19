@@ -95,7 +95,8 @@
                         <br>
                         <div class="button-wrapper">
                             <div class="submit">
-                                <button type="submit">수정</button>
+                                <input type="submit" value="수정"></input>
+                                <input type="button" value="회원탈퇴" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#user-quite"></input>
                             </div>
 
                             <div class="cancel">
@@ -107,10 +108,26 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="user-quite" tabindex="-1" aria-labelledby="user-quite" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="user-quite">회원탈퇴</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    정말로 데브토피아를 떠나실건가요?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                    <button type="button" class="btn btn-primary">회원탈퇴</button>
+                </div>
+            </div>
+        </div>user-quite
     </div>
-
-    <!-- signup right Start -->
-
 
     <!-- Vendor JS Files -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -124,7 +141,7 @@
 
 
 
-    
+
 </body>
 
 </html>
