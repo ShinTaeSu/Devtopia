@@ -348,11 +348,13 @@ ul{
     cursor: pointer;
 }
 
-#banner {
-    position: fixed;
-    right:50%;
-    margin-right:-800px; 
-    top: 168px;
+.sideBanner {
+    position: absolute;
+    width: 179px;
+    height: 687px;
+    right: 50%;
+    margin-right: -820px;
+    margin-top:150px;
 }
 
 .hidden{
