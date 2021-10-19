@@ -99,10 +99,14 @@
         </ul>
     </nav>
     <!-- nav end-->
-
     <!-- write section start-->
     <div class="main-contents">
         <section class="write-article-wrapper">
+             <!-- banner section start-->
+             <div class="sideBanner">
+                <img src="img/banner.png" alt="배너이미지" srcset="">
+            </div>
+            <!-- banner section end-->
             <div class="write-article">
                 <div class="board-head">
                     <h3>게시글 작성</h3>
@@ -125,12 +129,12 @@
                     <br>
                     <form class="form-horizontal">
                         <div class="note-wrap">
-                            <input id="summernote">
-                            </input>
+                            <div id="summernote">
+                            </div>
                         </div>
                         <div class="write-article-button-wrapper">
                             <div class="article-cotroller">
-                                <input type="submit" value="게시글 등록"></input>
+                                <button type="submit">게시글 등록</button>
                                 <!-- <button>수정</button>
                                 <button>삭제</button> -->
                             </div>
@@ -143,44 +147,6 @@
     </section>
     </div>
     <!-- write section end-->
-
-    <!-- login modal start -->
-    <div class="login-modal hidden">
-        <div class="login-modal-wrapper">
-            <div class="login-modal-contens">
-                <div class="login-modal-head">
-                    <h3>로그인</h3>
-                    <img src="./img/logo-dk-2.png" alt="modal-img" class="img-fluid">
-                </div>
-                <form action="" class="login-modal-form">
-                    <div class="login-modal-input">
-                        <label for="userId">아이디</label>
-                        <br>
-                        <input type="text" required>
-                    </div>
-                    <div class="login-modal-input">
-                        <label for="userPw">비밀번호</label>
-                        <br>
-                        <input type="password" required>
-                    </div>
-                    <div class="login-modal-button-wrapper">
-                        <div class="login-signup">
-                            <input type="submit" value="로그인" id="loginSuccess-button"></input>
-                            <button onclick="window.open('sign-up.html')">회원가입</button>
-                        </div>
-                        <div class="login-modal-close">
-                            <button id="closeButton">닫기</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- login modal end -->]
-
-
-    <div class="banner">
-        <img id="banner" src="img/banner.png" alt="배너이미지" srcset="">
 
         <!-- navigation -->
         <script>
@@ -202,7 +168,6 @@
             }
         </script>
         <!-- navigation -->
-
         <!-- Vendor JS Files -->
         <script src="vendor/aos/aos.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -213,7 +178,7 @@
         <script src="./vendor/summernote/js/summer.js"></script>
 
         <!-- Devtopia JS -->
-        <script src="js/main.js"></script>
+        <script src="js/banner.js"></script>
 
 </body>
 

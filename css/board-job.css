@@ -429,9 +429,12 @@ tbody tr:hover{
 }
 
 .sideBanner {
+    position: absolute;
     width: 179px;
     height: 687px;
-    top: 168px;
+    right: 50%;
+    margin-right: -820px;
+    margin-top:150px;
 }
 
 /** board End **/

@@ -321,15 +321,6 @@ ul{
     margin-top: 30px;
 }
 
-.article-cotroller input{
-    all: unset;
-    background-color: #172b4d;
-    border-radius: 5px;
-    padding: 5px 12px;
-    color: #fff;
-    cursor: pointer;
-}
-
 .article-cotroller button{
     all: unset;
     background-color: #172b4d;
@@ -348,11 +339,13 @@ ul{
     cursor: pointer;
 }
 
-#banner {
-    position: fixed;
-    right:50%;
-    margin-right:-800px; 
-    top: 168px;
+.sideBanner {
+    position: absolute;
+    width: 179px;
+    height: 687px;
+    right: 50%;
+    margin-right: -820px;
+    margin-top:150px;
 }
 
 .hidden{
@@ -405,15 +398,6 @@ ul{
     align-items: center;
 }
 
-.login-modal-button-wrapper input {
-    all: unset;
-    background-color: #172b4d;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 .login-modal-form button {
     all: unset;
     background-color: #172b4d;
@@ -422,3 +406,81 @@ ul{
     border-radius: 5px;
     cursor: pointer;
 }
+
+
+.button-wrapper{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.sign-up{
+    display: block;
+    color: #181918;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sign-up button {
+    border: none;
+    background: #e5e8ec;
+}
+
+.sign-up button:hover{
+    color: #0060f0;
+    font-weight: 700;
+}
+
+.member-info {
+    display: block;
+    color: #181918;
+    text-align: center;
+    text-decoration: none;
+}
+
+.member-info button {
+    border: none;
+    background: #e5e8ec;
+}
+
+.member-info button:hover{
+    color: #0060f0;
+    font-weight: 700;
+}
+
+.menu-wrapper{
+    display: block;
+    margin-top: 70px;
+}
+
+.menu ul li{
+    padding-bottom: 30px;
+    color: #fff;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.menu a{
+    color: #fff;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    font-weight: 700;
+    color: #3dc7dc;
+}
+
+.social-wrapper{
+    display: block;
+    text-align: center;
+}
+
+.social-github a{
+    color: #fff;
+    text-decoration: none;
+}
+/* nav */
+
+
