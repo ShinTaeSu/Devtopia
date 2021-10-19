@@ -29,7 +29,7 @@
     position: relative;
 }
 
-.logo{
+.logo {
     text-align: center;
     cursor: pointer;
 }
@@ -291,6 +291,10 @@ ul{
 
 .footer-main{
     display: flex;
+}
+
+.main-img-wrapper{
+    text-align: center;
 }
 
 .main-img-wrapper img{
