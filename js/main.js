@@ -124,3 +124,4 @@ const closeModal = () => {
 openButton.addEventListener("click", openModal);
 clsoeButton.addEventListener("click", closeModal);
 /// 로그인 모달 ///
+

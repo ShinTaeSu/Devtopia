@@ -102,8 +102,8 @@
     <!-- write section start-->
     <div class="main-contents">
         <section class="write-article-wrapper">
-             <!-- banner section start-->
-             <div class="sideBanner">
+            <!-- banner section start-->
+            <div class="sideBanner">
                 <img src="img/banner.png" alt="배너이미지" srcset="">
             </div>
             <!-- banner section end-->
@@ -148,37 +148,37 @@
     </div>
     <!-- write section end-->
 
-        <!-- navigation -->
-        <script>
-            let sidebar = document.querySelector(".sidebar");
-            let closeBtn = document.querySelector("#btn");
+    <!-- navigation -->
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
 
-            closeBtn.addEventListener("click", () => {
-                sidebar.classList.toggle("open");
-                menuBtnChange();// 함수 호출
-            });
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange();// 함수 호출
+        });
 
-            // 사이드바 변경 스크립트
-            function menuBtnChange() {
-                if (sidebar.classList.contains("open")) {
-                    closeBtn.classList.replace("bi-justify", "bi-justify-right");//아이콘 수정
-                } else {
-                    closeBtn.classList.replace("bi-justify-right", "bi-justify");//아이콘 롤백
-                }
+        // 사이드바 변경 스크립트
+        function menuBtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closeBtn.classList.replace("bi-justify", "bi-justify-right");//아이콘 수정
+            } else {
+                closeBtn.classList.replace("bi-justify-right", "bi-justify");//아이콘 롤백
             }
-        </script>
-        <!-- navigation -->
-        <!-- Vendor JS Files -->
-        <script src="vendor/aos/aos.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="./vendor/summernote/js/summernote-ko-KR.js"></script>
-        <script src="./vendor/summernote/js/summernote-lite.js"></script>
-        <script src="./vendor/summernote/js/summer.js"></script>
+        }
+    </script>
+    <!-- navigation -->
+    <!-- Vendor JS Files -->
+    <script src="vendor/aos/aos.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./vendor/summernote/js/summernote-ko-KR.js"></script>
+    <script src="./vendor/summernote/js/summernote-lite.js"></script>
+    <script src="./vendor/summernote/js/summer.js"></script>
 
-        <!-- Devtopia JS -->
-        <script src="js/banner.js"></script>
+    <!-- Devtopia JS -->
+    <script src="js/banner.js"></script>
 
 </body>
 

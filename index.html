@@ -245,18 +245,18 @@
                 </div>
                 <form action="" class="login-modal-form">
                     <div class="login-modal-input">
-                        <label for="userId">아이디</label>
+                        <label for="userId" id="userID">아이디</label>
                         <br>
                         <input type="text" required>
                     </div>
                     <div class="login-modal-input">
-                        <label for="userPw">비밀번호</label>
+                        <label for="userPw" id="userPw">비밀번호</label>
                         <br>
                         <input type="password" required>
                     </div>
                     <div class="login-modal-button-wrapper">
                         <div class="login-signup">
-                            <input type="submit" value="로그인" id="loginSuccess-button"></input>
+                            <input type="submit" value="로그인"></input>
                             <button onclick="window.open('sign-up.html')">회원가입</button>
                         </div>
                         <div class="login-modal-close">
@@ -268,7 +268,7 @@
         </div>
     </div>
     <!-- login modal end -->
-
+    
     <!-- navigation -->
     <script>
         let sidebar = document.querySelector(".sidebar");
@@ -293,10 +293,12 @@
     <!-- Vendor JS Files -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- main JS Files -->
     <script src="./js/main.js"></script>
     <script src="./js/banner.js"></script>
+    <script src="./js/login-success.js"></script>
 
 </body>
 
