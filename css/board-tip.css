@@ -1,4 +1,5 @@
 /* nav */
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 *{
@@ -269,6 +270,7 @@ ul{
 
 .sidebar li.profile .job{
     font-size: 12px;
+    z-index: 99999;
 }
 
 .main-contents{
@@ -289,18 +291,19 @@ ul{
 }
 /*nav end*/
 
+
 /* board start */
 
 .board-wrapper{
     display: block;
     width: 80%;
-
 }
 
 .board-title{
     padding: 15px;
     background-color: #172b4d;
     border-radius: 15px;
+    
 }
 
 .board-title h3{
@@ -426,7 +429,6 @@ tbody tr:hover{
     color: #0060f0
 }
 
-
 .sideBanner {
     position: absolute;
     width: 179px;
@@ -438,6 +440,24 @@ tbody tr:hover{
 
 /** board End **/
 
+/* fotter */
+footer{
+    position: relative;
+    background: #c1c7d0;
+    padding: 30px;
+    top: 0;
+    height: 100%;
+    left: 78px;
+    width: calc(800% - 78px);
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.sidebar.open ~ footer{
+    left: 250px;
+    width: calc(100% - 250px);
+}
+/* footer*/
 
 .hidden{
     display: none;
@@ -487,6 +507,15 @@ tbody tr:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.login-modal-button-wrapper input {
+    all: unset;
+    background-color: #172b4d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .login-modal-form button {

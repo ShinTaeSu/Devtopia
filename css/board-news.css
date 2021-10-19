@@ -387,7 +387,24 @@ ul{
     top: 168px;
 }
 
+/* fotter */
+footer{
+    position: relative;
+    background: #c1c7d0;
+    padding: 30px;
+    top: 0;
+    height: 100%;
+    left: 78px;
+    width: calc(800% - 78px);
+    transition: all 0.5s ease;
+    z-index: 1;
+}
 
+.sidebar.open ~ footer{
+    left: 250px;
+    width: calc(100% - 250px);
+}
+/* footer*/
 
 .hidden{
     display: none;

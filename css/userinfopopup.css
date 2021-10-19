@@ -26,89 +26,77 @@ body{
     background: #172b4d;
     }
     
-    .signup-form {
+.signup-form {
     border: 2px solid #e5e8ec;
     border-radius: 12px;
     padding: 50px;
     margin: 30px 0;
     background-color: #fff;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-    }
-    
-    
-    .form-control {
+}
+
+
+.form-control {
     background-color:#e5e8ec ;
-    }
-    
-    .form-control:focus,  button:focus {
+}
+
+.form-control:focus,  button:focus {
     box-shadow: none;
     outline: none;
-    }
-    
-    .signup-form h1 {
+}
+
+.signup-form h1 {
     text-align: center;
     font-weight: 700;
     margin: 0 0 15px;
-    }
-    
-    .main-them{
+}
+
+.main-them{
     display: flex;
     justify-content: center;
-    }
-    
-    .animated {
+}
+
+.animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
-    }
-    
-    @-webkit-keyframes up-down {
-    0% {
-    transform: translateY(10px);
-    }
-    100% {
-    transform: translateY(-10px);
-    }
-    }
-    
-    @keyframes up-down {
-    0% {
-    transform: translateY(10px);
-    }
-    100% {
-    transform: translateY(-10px);
-    }
-    }
-    
-    
-    .form-group span{
+}
+
+@-webkit-keyframes up-down {
+0% {
+transform: translateY(10px);
+}
+100% {
+transform: translateY(-10px);
+}
+}
+
+@keyframes up-down {
+0% {
+transform: translateY(10px);
+}
+100% {
+transform: translateY(-10px);
+}
+}
+
+
+.form-group span{
     color: #FF0000;
-    }
-    
-    .signup-form .form-control,
-    .signup-form .btn {
-        min-height: 50px;
-        border-radius: 4px;
-    }
-    
-    .button-wrapper{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-bottom: 30px;
-    }
-    
-    .submit input{
-        width: 100px;
-        height: 50px;
-        padding: 0 12px;
-        border: none;
-        border-radius: 4px;
-        font-size: 14px;
-        font-weight: 700;
-        color: #fff;
-        background-color: #172b4d;
-    }
-    
-    .cancel button{
+}
+
+.signup-form .form-control,
+.signup-form .btn {
+    min-height: 50px;
+    border-radius: 4px;
+}
+
+.button-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.submit input{
     width: 100px;
     height: 50px;
     padding: 0 12px;
@@ -118,9 +106,25 @@ body{
     font-weight: 700;
     color: #fff;
     background-color: #172b4d;
-    }
-    
-    button:hover {
+}
+
+.cancel button{
+    width: 100px;
+    height: 50px;
+    padding: 0 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #172b4d;
+}
+
+button:hover {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-    }
+}
+
+.modal-content {
+    all: unset;
+}
