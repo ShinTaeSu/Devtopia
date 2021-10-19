@@ -293,6 +293,10 @@ ul{
     display: flex;
 }
 
+.main-img-wrapper{
+    text-align: center;
+}
+
 .main-img-wrapper img{
     display: inline-block;
     color: #11101d;
