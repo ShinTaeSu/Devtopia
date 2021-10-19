@@ -288,9 +288,6 @@ ul{
     width: calc(100% - 250px);
 }
 
-.main-contents-start{
-    width: 80%;
-}
 
 .footer-main{
     display: flex;
